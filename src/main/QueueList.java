@@ -37,6 +37,21 @@ class Queue {
 		return temp;
 		
 	}
+     void display() {
+
+        Node temp = front;
+
+        while(temp!=null) {
+
+            System.out.print( temp.data +" " );
+
+            temp = temp.next; 
+
+        }
+
+        System.out.println("\n");
+
+    }
 }
 public class QueueList {
 	public static void main(String args[]) {
@@ -53,6 +68,7 @@ public class QueueList {
 		   break;
 		case 2:System.out.println(li.dequeue() + " dequeue from Queue");
 		       break;
+                case 3: li.display (); break;
 		default:
 			System.out.println("Wrong Choice!!!");
 		}
